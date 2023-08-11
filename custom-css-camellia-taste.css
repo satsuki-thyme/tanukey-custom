@@ -1,0 +1,220 @@
+:root {
+  --customTextFontFamily: Helvetica, Arial, "ヒラギノ角ゴシック", "游ゴシック", "メイリオ"; /* フォントファミリー */
+  --customSizeFont: 22px;            /* フォントサイズ */
+  --customSizeLetterSpacing: 0.05em; /* レタースペーシング */
+  --customSizeLineHeight: 1.6;       /* ラインヘイト */
+  --customSizeEmoji: 2em;            /* 絵文字サイズ */
+  --customScaleEmojiChip1: 1.3;      /* 絵文字サイズ */
+  --customScaleEmojiChip2: 1.7;      /* 絵文字サイズ  */
+  --customTransparentText: 0.5;      /* テキストの薄さ */
+  --customTransparentEmoji: 0.85;    /* 絵文字の薄さ */
+}
+/*
+
+  メニュー
+
+*/
+/* 左サイドのメニュー帯の幅を小さく */
+div.xryhL {
+  --nav-width: 162px;
+}
+div.xryhL:not(.xghTi) a.x6KaV,
+div.xryhL:not(.xghTi) button.x6KaV {
+  padding-left: 5px;
+}
+div.xryhL:not(.xghTi) a.xCl1K,
+div.xryhL:not(.xghTi) button.xCl1K {
+  margin-left: 5px;
+}
+div.xryhL:not(.xghTi) a.xcE14,
+div.xryhL:not(.xghTi) button.xcE14 {
+  padding-left: 13px;
+}
+div.xryhL:not(.xghTi) a.x6KaV:hover::before,
+div.xryhL:not(.xghTi) button.x6KaV:hover::before,
+div.xryhL:not(.xghTi) a.x6KaV.x7vS5::before,
+div.xryhL:not(.xghTi) button.x6KaV::before,
+div.xryhL:not(.xghTi) a.xplJN::before,
+div.xryhL:not(.xghTi) button.xplJN::before {
+  width: calc(100% - 10px);
+}
+/*
+
+  TL, スティッキー
+
+*/
+/* TL の幅を最大化 */
+div.xvu6Q {
+  max-width: unset;
+}
+/* 既読の RN を非表示 */
+div.xkYCV.x3762:not(.xj38T),
+div.xcSej.xj38T.x3762:has(.x22gY) {
+  display: none;
+}
+/* ノート外周の余白を小さく */
+article.x5yeR {
+  padding: 8px 15px 20px;
+}
+/* 引用にスクロールバーを表示 */
+div.xynJn {
+  overflow-y: auto;
+}
+/* アイコンを上部に固定 */
+a.xrEoV,
+a.xCcjq {
+  top: 0;
+}
+/* 経過時間, ID を薄く表示 */
+header.xCPfz img.xeJ4G.x5kTm,
+div.xBLVI,
+div.xAtlm {
+  opacity: var(--customTransparentText);
+}
+/* テキストの表示を変更 */
+div.xc6MI.xfC1o textarea.x8B0D,
+div.xFdHz div.xcSej div.x48yH,
+div.xFdHz div.xcSej div.xmqJ1,
+div.xFdHz div.xpUJO.xpf5j,
+div.xFdHz div.xcSej div.xpUJO.x37Ma {
+  font-family: var(--customTextFontFamily);
+  font-size: var(--customSizeFont);
+  letter-spacing: var(--customSizeLetterSpacing);
+  line-height: var(--customSizeLineHeight);
+}
+/* 絵文字を大きく表示 */
+div.xeJ4G.x5kTm.x9Io4,
+div.xpUJO.xpf5j,
+div.x48yH div.xeJ4G {
+  height: var(--customSizeEmoji);
+}
+/* 絵文字を薄く表示 */
+div.xeJ4G,
+div.xlT1y {
+  opacity: var(--customTransparentEmoji);
+}
+/* 画像サイズを小さく */
+div.xutAY.xsfFg {
+  max-height: clamp(50px, 40cqh, min(300px, 40vh));
+}
+/* ホバーで表示されるリアクションのチップがノートの文字を隠さないようにする */
+div.xcSej.xj38T footer.xhAPG {
+  top: 0;
+}
+div.xcSej.xj38T button.xviCy {
+  padding: 6px 8px;
+  font-size: 100%;
+}
+/*
+
+  プレビュー
+
+*/
+/* テキストの表示を変更 */
+div.xEd72.xoGjR {
+  font-family: var(--customTextFontFamily);
+  font-size: var(--customSizeFont);
+  letter-spacing: var(--customSizeLetterSpacing);
+  line-height: var(--customSizeLineHeight);
+}
+/*
+
+  絵文字入力チップ（他ユーザのノートに入力するときの表示）
+
+*/
+/* ユニコード絵文字を非表示 */
+div.omfetrab > div.emojis div.group.index > section:first-child,
+div.omfetrab > div.emojis div.group.index > section header,
+div.omfetrab > div.emojis div.group > header {
+  display: none;
+}
+/* 絵文字を絵文字の幅で表示 */
+div.omfetrab > div.emojis > div.group > section > div.body > button.item,
+div.omfetrab > div.emojis > section.result > div.body > button.item {
+  contain: initial;
+  width: unset;
+  max-width: 49%;
+  padding: 3px;
+}
+div.omfetrab > div.emojis > div.group > section > div.body > button.item > img.emoji,
+div.omfetrab > div.emojis > section.result > div.body > button.item > img.emoji {
+  width: 100%;
+  max-width: calc(var(--eachSize) * 3);
+}
+/* 絵文字の表示数を増やす */
+div.omfetrab.s1.w1.h2._popup._shadow {
+  width: calc(var(--eachSize) * 6 + (8px * 2));
+  height: calc(var(--eachSize) * 8 + (8px * 2));
+}
+/*
+
+  絵文字入力チップ（自分のノートに入力するときの表示）
+
+*/
+/* 画像の表示を変更 */
+img.xeJ4G.xuoKL {
+  height: calc(24px * var(--customScaleEmojiChip2)) !important;
+  width: calc(24px * var(--customScaleEmojiChip2)) !important;
+  margin-right: 7px !important;
+  padding: 2px;
+  background-color: #fff;
+}
+/* 投稿ポップアップ */
+div.xc6MI.xEzLL > div.xr8AW.xzO6v > div._popup.x7ceY > button:not(:nth-of-type(1), :nth-of-type(9)) {
+  display: none;
+}
+/*
+
+  スマホ
+
+*/
+@media (max-width: 500px) {
+  /* ノートの文字サイズ */
+  :root {
+    --customSizeFont: 16px;
+  }
+  /*
+
+    ノートの文字の回り込み
+
+  */
+  /* flex の解除 */
+  article.x5yeR {
+    display: block;
+  }
+  /* よく分からないけど必要 */
+  article.x5yeR > div.xDn7E > div:nth-of-type(1) {
+    display: inline;
+  }
+  /* ノートのアイコンに回り込ませる */
+  a.xrEoV {
+    float: left;
+    width: 40px;
+    height: 40px;
+  }
+  /*
+
+    メニュー
+
+  */
+  /* 上部メニュー帯の幅を小さく */
+  div.xeHR5 {
+    --height: 30px;
+  }
+  /* 下部メニュー帯の幅を小さく */
+  div.xApN7 {
+    padding: 4px 4px max(4px, env(safe-area-inset-bottom, 0px)) 4px;
+  }
+  button.xyfXN {
+    max-width: 30px;
+  }
+  /*
+
+    TL
+
+  */
+  /* TL 外縁の余白をなくす */
+  div.xpACr.xDM92 {
+    padding: 0 !important;
+  }
+}
