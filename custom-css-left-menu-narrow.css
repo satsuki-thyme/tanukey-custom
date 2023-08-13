@@ -1,0 +1,24 @@
+/* 左側の縦メニューの幅を狭くする */
+div.xryhL {
+  --nav-width: 162px;
+}
+div.xryhL:not(.xghTi) a.x6KaV,
+div.xryhL:not(.xghTi) button.x6KaV {
+  padding-left: 5px;
+}
+div.xryhL:not(.xghTi) a.xCl1K,
+div.xryhL:not(.xghTi) button.xCl1K {
+  margin-left: 5px;
+}
+div.xryhL:not(.xghTi) a.xcE14,
+div.xryhL:not(.xghTi) button.xcE14 {
+  padding-left: 13px;
+}
+div.xryhL:not(.xghTi) a.x6KaV:hover::before,
+div.xryhL:not(.xghTi) button.x6KaV:hover::before,
+div.xryhL:not(.xghTi) a.x6KaV.x7vS5::before,
+div.xryhL:not(.xghTi) button.x6KaV::before,
+div.xryhL:not(.xghTi) a.xplJN::before,
+div.xryhL:not(.xghTi) button.xplJN::before {
+  width: calc(100% - 10px);
+}

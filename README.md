@@ -12,6 +12,8 @@
 - カメリア🐢的な Monokai 観によるテーマ
 - 野良テーマ（＝非公式）
 
+### custom-css-left-menu-narrow.css
+- 左側の縦メニューの幅を狭くする
 ### custom-css-reaction-image-expansion.css
 - ノートに付いたリアクションの絵文字を大きく表示する
 - 数値の編集によってサイズを調整できる（小数可）
