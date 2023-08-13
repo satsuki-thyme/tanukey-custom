@@ -1,0 +1,9 @@
+/* ノートのリアクションの絵文字を拡大する */
+button.xDRXD.x1RtL {
+  height: unset;
+  padding: 6px;
+}
+img.x5kTm {
+  height: 2em; /* ここの数字でサイズを調整できる */
+  vertical-align: middle;
+}
