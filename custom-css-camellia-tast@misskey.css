@@ -47,11 +47,11 @@ div.xryhL:not(.xghTi) button.xplJN::before {
 div.xvu6Q {
   max-width: unset;
 }
-/* 既読の RN を非表示 */
-div.xcSej.xj38T.x3762:has(.x22gY) {
+/* RN を非表示 */
+div.xcSej.xj38T.x3762:has(.xBwhh) {
   display: none;
 }
-/* ソフトミュートを非表示 */
+/* ソフトミュートを隠す */
 div.xkYCV.x3762:not(.xj38T) {
   display: none;
 }
