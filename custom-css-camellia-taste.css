@@ -162,10 +162,6 @@ img.xeJ4G.xuoKL {
   padding: 2px;
   background-color: #fff;
 }
-/* 投稿ポップアップ */
-div.xc6MI.xEzLL > div.xr8AW.xzO6v > div._popup.x7ceY > button:not(:nth-of-type(1), :nth-of-type(9)) {
-  display: none;
-}
 /*
 
   通知ウィジェット
