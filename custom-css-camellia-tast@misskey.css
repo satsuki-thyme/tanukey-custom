@@ -125,12 +125,6 @@ div.xEd72.xoGjR {
   絵文字入力チップ（他ユーザのノートに入力するときの表示）
 
 */
-/* ユニコード絵文字を非表示 */
-div.omfetrab > div.emojis div.group.index > section:first-child,
-div.omfetrab > div.emojis div.group.index > section header,
-div.omfetrab > div.emojis div.group > header {
-  display: none;
-}
 /* 絵文字を絵文字の幅で表示 */
 div.omfetrab > div.emojis > div.group > section > div.body > button.item,
 div.omfetrab > div.emojis > section.result > div.body > button.item {
@@ -143,11 +137,6 @@ div.omfetrab > div.emojis > div.group > section > div.body > button.item > img.e
 div.omfetrab > div.emojis > section.result > div.body > button.item > img.emoji {
   width: 100%;
   max-width: calc(var(--eachSize) * 3);
-}
-/* 絵文字の表示数を増やす */
-div.omfetrab.s1.w1.h2._popup._shadow {
-  width: calc(var(--eachSize) * 6 + (8px * 2));
-  height: calc(var(--eachSize) * 8 + (8px * 2));
 }
 /*
 
