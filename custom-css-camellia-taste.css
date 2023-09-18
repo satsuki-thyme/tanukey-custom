@@ -214,3 +214,7 @@ img.xeJ4G.xuoKL {
     padding: 0 !important;
   }
 }
+/* アイコンのミュート */
+a[href="/@Yoruma"] {
+  opacity: 0.02;
+}
