@@ -47,10 +47,6 @@ div.xryhL:not(.xghTi) button.xplJN::before {
 div.xvu6Q {
   max-width: unset;
 }
-/* 既読の RN を非表示 */
-div.xcSej.xj38T.x3762:has(.x22gY) {
-  display: none;
-}
 /* ソフトミュートを非表示 */
 div.xkYCV.x3762:not(.xj38T) {
   display: none;
@@ -58,10 +54,6 @@ div.xkYCV.x3762:not(.xj38T) {
 /* ノート外周の余白を小さく */
 article.x5yeR {
   padding: 8px 15px 20px;
-}
-/* 引用にスクロールバーを表示 */
-div.xynJn {
-  overflow-y: auto;
 }
 /* アイコンを上部に固定 */
 a.xrEoV,
